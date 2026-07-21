@@ -1,0 +1,16 @@
+[
+{
+  "name": "Pasan Piyumal",
+  "email": "pasan.piyumal@example.com",
+  "phone": "123456789",
+  "service": "Telcom",
+  "message": "This is a test message using JSON data!"
+},
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "987654321",
+    "service": "Aviation",
+    "message": "This is John's test message using JSON data!"
+  }
+]
