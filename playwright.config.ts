@@ -23,8 +23,6 @@ module.exports = defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     
-    // Headless mode එක true ද false ද කියලා මෙතනින් පාලනය කරන්න පුළුවන්
-    headless: true, 
   },
 
   // 6. 👑 මෙන්න Multi-Browser Testing සෙල්ලම!
