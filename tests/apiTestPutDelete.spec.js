@@ -139,6 +139,6 @@ test.describe('API Testing with JSONPlaceholder (CRUD Operations)', () => {
       method: 'OPTIONS'
     });
     console.log('Allowed Methods:', optionsResponse.headers()['allow']);
-    expect(optionsResponse.status()).toBe(200);
+    expect(optionsResponse.status()).toBe(204);
   });
 });
