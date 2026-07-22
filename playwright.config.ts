@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import { defineConfig, devices } from '@playwright/test';
 
+const baseURL = (globalThis as { process?: { env?: { BASE_URL?: string } } }).process?.env?.BASE_URL;
+
 export default defineConfig({
   // 1. ටෙස්ට් ෆයිල් තියෙන ෆෝල්ඩර් එක ප්ලේරයිට් එකට කියනවා
   testDir: './tests',
@@ -17,7 +19,7 @@ export default defineConfig({
   // 5. හැම බ්‍රවුසර් එකකටම පොදුවේ බලපාන සෙටින්ග්ස්
   use: {
     // 💡 .env එකේ තියෙන BASE_URL එක ප්ලේරයිට් එකේ global baseURL එක විදිහට සෙට් කරනවා
-    //baseURL: process.env.BASE_URL,
+    baseURL: 'https://arimac-web-2026.arimac.tech/',
     // 💡 ටෙස්ට් එක ෆේල් වුණොත් විතරක් Screenshot එකක් සහ Video එකක් ඔටෝ ගන්නවා!
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
