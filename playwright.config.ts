@@ -4,6 +4,8 @@ import { defineConfig, devices } from '@playwright/test';
 const baseURL = (globalThis as { process?: { env?: { BASE_URL?: string } } }).process?.env?.BASE_URL;
 
 export default defineConfig({
+
+  testMatch: ['**/arimac*.spec.js', '**/api*.spec.js'], // වැඩ කරන tests විතරක් run කරන්න
   // 1. ටෙස්ට් ෆයිල් තියෙන ෆෝල්ඩර් එක ප්ලේරයිට් එකට කියනවා
   testDir: './tests',
 
