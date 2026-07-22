@@ -1,3 +1,4 @@
+test.skip('My First Test', async ({ page }) => {});
 const { test, expect } = require('@playwright/test');
 
 test('Verify Dashboard without logging in again', async ({ page }) => {
