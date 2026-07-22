@@ -1,8 +1,7 @@
-require('dotenv').config();
+import 'dotenv/config';
+import { defineConfig, devices } from '@playwright/test';
 
-const { defineConfig, devices } = require('@playwright/test');
-
-module.exports = defineConfig({
+export default defineConfig({
   // 1. ටෙස්ට් ෆයිල් තියෙන ෆෝල්ඩර් එක ප්ලේරයිට් එකට කියනවා
   testDir: './tests',
 
